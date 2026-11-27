@@ -162,3 +162,27 @@ Contributions are warmly welcome! Whether you are an experienced IT BA, a Produc
 - Report issues and help refine agent prompts.
 
 Licensed under the [MIT License](LICENSE).
+
+### Installing the OpenBA skills from a pinned commit
+
+Download the source archive for the full upstream commit SHA. Copy the complete
+`skills/` directory contents into one skills directory (project or global),
+keeping the skill directories as siblings and preserving `skills/LICENSE` as
+the bundle license. The supported installation unit is the full bundle.
+Installation is a file copy. Python 3 is used when invoking the renderer.
+
+Check the pinned archive includes `skills/LICENSE`, `skills/prd/SKILL.md`,
+`skills/srs/SKILL.md`, `skills/preview/SKILL.md`,
+`skills/prd/references/_templates/01-prd.md`,
+`skills/prd/references/_templates/08-srs.md`,
+`skills/prd/references/rules/05-srs-ieee-830.md`,
+`skills/render-diagrams/scripts/render_diagrams.py`, and both
+`mermaid_extract.py` and `export_svg.py` under
+`skills/diagram-design/scripts/`. Preserve all other files under `skills/`.
+
+Resolve resource paths relative to the loaded skill's `SKILL.md` and paths
+under `docs/` relative to the user's project. In a repository checkout,
+the top-level template, rule and renderer paths are compatibility links.
+
+Run `python3 -m unittest discover -s tests -v` to check the layout and
+exercise rendering from a clean copy.

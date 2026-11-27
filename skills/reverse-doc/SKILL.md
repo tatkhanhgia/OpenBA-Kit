@@ -12,14 +12,17 @@ metadata:
 
 Tái lập bộ tài liệu SRS từ file rời rạc (Word, PDF, ảnh chụp)
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/reverse-doc`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/05-srs-ieee-830.md`\n- `rules/18-knowledge-graph-metadata.md`
+- `../prd/references/rules/05-srs-ieee-830.md`
+- `../prd/references/rules/18-knowledge-graph-metadata.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/13-reverse-doc.md`
+- `../prd/references/_templates/13-reverse-doc.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/srs/reverse-spec.md`

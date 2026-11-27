@@ -12,14 +12,16 @@ metadata:
 
 Wireframe dạng ký tự, phác nhanh trong tài liệu
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/wireframe-ascii`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/13-wireframe-html-guidelines.md`
+- `../prd/references/rules/13-wireframe-html-guidelines.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/30-wireframe-ascii.md`
+- `../prd/references/_templates/30-wireframe-ascii.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/ui/wireframe-ascii.md`

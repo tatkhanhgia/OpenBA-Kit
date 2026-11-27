@@ -12,14 +12,17 @@ metadata:
 
 Phân tích tác động thay đổi rồi sửa tài liệu liên quan
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/cr`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/15-change-request-impact-matrix.md`\n- `rules/19-document-versioning-rules.md`
+- `../prd/references/rules/15-change-request-impact-matrix.md`
+- `../prd/references/rules/19-document-versioning-rules.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/47-change-request.md`
+- `../prd/references/_templates/47-change-request.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/cr/{cr_id}.md`

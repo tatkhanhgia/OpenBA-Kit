@@ -12,14 +12,21 @@ metadata:
 
 Đặc tả kỹ thuật: FR / NFR / business rule / ma trận lỗi
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/srs`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/01-fr-naming-convention.md`\n- `rules/02-br-naming-convention.md`\n- `rules/03-err-naming-convention.md`\n- `rules/04-nfr-standards.md`\n- `rules/05-srs-ieee-830.md`\n- `rules/11-error-matrix-convention.md`
+- `../prd/references/rules/01-fr-naming-convention.md`
+- `../prd/references/rules/02-br-naming-convention.md`
+- `../prd/references/rules/03-err-naming-convention.md`
+- `../prd/references/rules/04-nfr-standards.md`
+- `../prd/references/rules/05-srs-ieee-830.md`
+- `../prd/references/rules/11-error-matrix-convention.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/08-srs.md`
+- `../prd/references/_templates/08-srs.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/srs/spec.md`

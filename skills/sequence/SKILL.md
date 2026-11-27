@@ -12,14 +12,17 @@ metadata:
 
 Sơ đồ tuần tự: ai gọi ai, theo thứ tự nào
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/sequence`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/01-fr-naming-convention.md`\n- `rules/10-api-contract-standards.md`
+- `../prd/references/rules/01-fr-naming-convention.md`
+- `../prd/references/rules/10-api-contract-standards.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/15-sequence-diagram.md`
+- `../prd/references/_templates/15-sequence-diagram.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/srs/flows.md`

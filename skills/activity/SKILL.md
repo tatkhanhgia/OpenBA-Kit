@@ -12,14 +12,16 @@ metadata:
 
 Sơ đồ hoạt động có nhánh quyết định
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/activity`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/02-br-naming-convention.md`
+- `../prd/references/rules/02-br-naming-convention.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/16-activity-diagram.md`
+- `../prd/references/_templates/16-activity-diagram.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/srs/activity.md`

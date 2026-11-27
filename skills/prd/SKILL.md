@@ -12,14 +12,18 @@ metadata:
 
 PRD toàn sản phẩm: tầm nhìn, người dùng, bóc tách danh sách tính năng
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/prd`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/01-fr-naming-convention.md`\n- `rules/16-ambiguity-detection-rules.md`\n- `rules/17-actor-role-definition.md`
+- `./references/rules/01-fr-naming-convention.md`
+- `./references/rules/16-ambiguity-detection-rules.md`
+- `./references/rules/17-actor-role-definition.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/01-prd.md`
+- `./references/_templates/01-prd.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{product_name}/01-prd.md`
@@ -37,7 +41,7 @@ Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/prd`, sinh ra
 4. **Kiểm tra độ mơ hồ**:
    - Áp dụng Rule `16-ambiguity-detection-rules.md` để loại bỏ các từ ngữ cảm tính ("nhanh", "dễ dùng", "bảo mật cao").
 5. **Ghi tệp đầu ra**:
-   - Sử dụng template `_templates/01-prd.md` và ghi vào `docs/{product_name}/01-prd.md`.
+   - Sử dụng template `./references/_templates/01-prd.md` và ghi vào `docs/{product_name}/01-prd.md`.
 
 ## Tiêu chí Nghiệm thu (Quality Checklist)
 - [ ] Sử dụng ngôn ngữ tiếng Việt chuyên nghiệp, đúng thuật ngữ IT BA.

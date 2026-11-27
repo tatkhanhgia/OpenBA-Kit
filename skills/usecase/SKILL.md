@@ -12,14 +12,17 @@ metadata:
 
 Use case chi tiết chuẩn Cockburn: actor, điều kiện, luồng chính, ngoại lệ
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/usecase`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/06-cockburn-use-case.md`\n- `rules/17-actor-role-definition.md`
+- `../prd/references/rules/06-cockburn-use-case.md`
+- `../prd/references/rules/17-actor-role-definition.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/26-usecase-cockburn.md`
+- `../prd/references/_templates/26-usecase-cockburn.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/usecases/{usecase_id}.md`

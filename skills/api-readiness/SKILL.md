@@ -12,14 +12,16 @@ metadata:
 
 Cổng kiểm tra trước khi lên production
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/api-readiness`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/04-nfr-standards.md`
+- `../prd/references/rules/04-nfr-standards.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/41-api-readiness.md`
+- `../prd/references/_templates/41-api-readiness.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/api/production-readiness.md`
