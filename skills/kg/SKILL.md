@@ -12,14 +12,16 @@ metadata:
 
 Knowledge Graph của toàn bộ tài liệu, tra cứu liên kết
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/kg`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/18-knowledge-graph-metadata.md`
+- `../prd/references/rules/18-knowledge-graph-metadata.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/46-knowledge-graph-index.md`
+- `../prd/references/_templates/46-knowledge-graph-index.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/knowledge-graph.json`

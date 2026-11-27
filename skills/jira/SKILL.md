@@ -12,14 +12,17 @@ metadata:
 
 Đồng bộ 2 chiều backlog với Jira Cloud
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/jira`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/07-invest-user-story.md`\n- `rules/08-gherkin-acceptance-criteria.md`
+- `../prd/references/rules/07-invest-user-story.md`
+- `../prd/references/rules/08-gherkin-acceptance-criteria.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/27-userstory.md`
+- `../prd/references/_templates/27-userstory.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/jira-sync-log.md`

@@ -12,14 +12,16 @@ metadata:
 
 Sinh script Playwright tự động chạy test trên trình duyệt
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/playwright-gen`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/14-test-case-traceability.md`
+- `../prd/references/rules/14-test-case-traceability.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/44-playwright-gen.spec.ts`
+- `../prd/references/_templates/44-playwright-gen.spec.ts`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/test/e2e.spec.ts`

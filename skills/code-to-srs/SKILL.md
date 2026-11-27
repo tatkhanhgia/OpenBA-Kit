@@ -12,14 +12,17 @@ metadata:
 
 Đọc source code hệ thống cũ, dựng lại bộ SRS kèm trích dẫn dòng code
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/code-to-srs`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/01-fr-naming-convention.md`\n- `rules/05-srs-ieee-830.md`
+- `../prd/references/rules/01-fr-naming-convention.md`
+- `../prd/references/rules/05-srs-ieee-830.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/14-code-to-srs.md`
+- `../prd/references/_templates/14-code-to-srs.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/srs/code-derived-spec.md`

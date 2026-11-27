@@ -12,14 +12,17 @@ metadata:
 
 Soi tính năng còn thiếu luồng nghiệp vụ nào
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/gap`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/02-br-naming-convention.md`\n- `rules/16-ambiguity-detection-rules.md`
+- `../prd/references/rules/02-br-naming-convention.md`
+- `../prd/references/rules/16-ambiguity-detection-rules.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/45-gap-analysis.md`
+- `../prd/references/_templates/45-gap-analysis.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/gap-analysis.md`

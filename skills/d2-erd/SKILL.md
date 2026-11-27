@@ -12,14 +12,16 @@ metadata:
 
 Sơ đồ quan hệ dữ liệu bản đẹp (D2)
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/d2-erd`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/09-data-dictionary-standard.md`
+- `../prd/references/rules/09-data-dictionary-standard.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/21-erd-d2.d2`
+- `../prd/references/_templates/21-erd-d2.d2`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/srs/erd.d2`

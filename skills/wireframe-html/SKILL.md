@@ -12,14 +12,16 @@ metadata:
 
 Wireframe HTML đen trắng, render element thật
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/wireframe-html`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/13-wireframe-html-guidelines.md`
+- `../prd/references/rules/13-wireframe-html-guidelines.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/31-wireframe-html.html`
+- `../prd/references/_templates/31-wireframe-html.html`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/html-wireframe/{screen_name}.html`

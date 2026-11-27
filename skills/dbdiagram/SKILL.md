@@ -12,14 +12,16 @@ metadata:
 
 Schema database DBML, import dbdiagram.io, xuất SQL
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/dbdiagram`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/09-data-dictionary-standard.md`
+- `../prd/references/rules/09-data-dictionary-standard.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/24-dbdiagram.dbml`
+- `../prd/references/_templates/24-dbdiagram.dbml`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/srs/schema.dbml`

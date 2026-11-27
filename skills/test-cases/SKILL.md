@@ -12,14 +12,17 @@ metadata:
 
 Test case chi tiết chạy được, sinh từ checklist
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/test-cases`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/14-test-case-traceability.md`\n- `rules/08-gherkin-acceptance-criteria.md`
+- `../prd/references/rules/14-test-case-traceability.md`
+- `../prd/references/rules/08-gherkin-acceptance-criteria.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/43-test-cases.md`
+- `../prd/references/_templates/43-test-cases.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/test/test-cases.md`

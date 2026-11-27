@@ -4,21 +4,15 @@ render_diagrams.py — Tự động quét Markdown và render Mermaid thành vis
 theo chuẩn phong cách Diagram Design (https://diagramdesign.dev).
 """
 
-import os
 import sys
 import json
 import re
 import subprocess
+import tempfile
 import html
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-SKILL_DIR = REPO_ROOT / "skills" / "diagram-design"
-if not SKILL_DIR.exists():
-    for fallback in [Path.home() / ".claude" / "skills" / "diagram-design", Path.home() / ".hermes" / "skills" / "diagram-design"]:
-        if fallback.exists():
-            SKILL_DIR = fallback
-            break
+SKILL_DIR = Path(__file__).resolve().parents[2] / "diagram-design"
 MERMAID_EXTRACT = SKILL_DIR / "scripts" / "mermaid_extract.py"
 EXPORT_SVG = SKILL_DIR / "scripts" / "export_svg.py"
 
@@ -373,14 +367,10 @@ def process_markdown_file(md_path, out_dir=None):
     print(f"\n📄 Đang xử lý file: {md_path.name} ({len(blocks)} diagram blocks)")
     
     # Chạy extractor lấy JSON
-    cmd = ["python3", str(MERMAID_EXTRACT), str(md_path), "--diagram", "all", "--json"]
-    try:
-        proc = subprocess.run(cmd, capture_output=True, text=True, check=True)
-        ir_data = json.loads(proc.stdout)
-    except Exception as e:
-        print(f"[-] Lỗi extract Mermaid IR: {e}")
-        return []
-        
+    cmd = [sys.executable, str(MERMAID_EXTRACT), str(md_path), "--diagram", "all", "--json"]
+    proc = subprocess.run(cmd, stdout=subprocess.PIPE, text=True, check=True)
+    ir_data = json.loads(proc.stdout)
+
     diagrams = ir_data.get("diagrams", [])
     
     for idx, diag in enumerate(diagrams):
@@ -404,12 +394,18 @@ def process_markdown_file(md_path, out_dir=None):
         out_html = target_dir / f"{stem}-{idx + 1}.html"
         out_svg = target_dir / f"{stem}-{idx + 1}.svg"
         
-        out_html.write_text(html_content, encoding="utf-8")
-        
-        # Export SVG bằng script chính thống của diagram-design
-        export_cmd = ["python3", str(EXPORT_SVG), str(out_html), str(out_svg)]
-        subprocess.run(export_cmd, capture_output=True, text=True)
-        
+        # Publish output only after the bundled exporter succeeds.
+        with tempfile.TemporaryDirectory(dir=target_dir) as staging:
+            staged_html = Path(staging) / out_html.name
+            staged_svg = Path(staging) / out_svg.name
+            staged_html.write_text(html_content, encoding="utf-8")
+            subprocess.run(
+                [sys.executable, str(EXPORT_SVG), str(staged_html), str(staged_svg)],
+                check=True,
+            )
+            staged_svg.replace(out_svg)
+            staged_html.replace(out_html)
+
         print(f"  ✓ Đã sinh Diagram {idx + 1}:")
         print(f"    - HTML: {out_html}")
         print(f"    - SVG : {out_svg}")
@@ -486,4 +482,7 @@ def main():
     print(f"\n🎉 Hoàn thành! Đã tạo tổng cộng {len(all_rendered)} visual diagrams.")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except subprocess.CalledProcessError as error:
+        sys.exit(f"Renderer helper failed: {error}")

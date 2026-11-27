@@ -12,14 +12,17 @@ metadata:
 
 Bản thiết kế tích hợp: các hệ thống phối hợp thế nào
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/api-design`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/10-api-contract-standards.md`\n- `rules/03-err-naming-convention.md`
+- `../prd/references/rules/10-api-contract-standards.md`
+- `../prd/references/rules/03-err-naming-convention.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/37-api-design.md`
+- `../prd/references/_templates/37-api-design.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/api/api-spec.md`

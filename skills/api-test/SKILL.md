@@ -12,14 +12,16 @@ metadata:
 
 Test API kiểu Postman, sinh collection Bruno chạy được
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/api-test`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/10-api-contract-standards.md`
+- `../prd/references/rules/10-api-contract-standards.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/40-api-test-bruno.bru`
+- `../prd/references/_templates/40-api-test-bruno.bru`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/api/collection.bru`

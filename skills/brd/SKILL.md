@@ -12,14 +12,16 @@ metadata:
 
 Tài liệu yêu cầu nghiệp vụ: mục tiêu, phạm vi, rủi ro, ROI
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/brd`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/15-change-request-impact-matrix.md`
+- `../prd/references/rules/15-change-request-impact-matrix.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/06-brd.md`
+- `../prd/references/_templates/06-brd.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/06-brd.md`

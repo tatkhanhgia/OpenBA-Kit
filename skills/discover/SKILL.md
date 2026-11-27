@@ -12,14 +12,16 @@ metadata:
 
 Điều tra ý tưởng còn phân vân: nhu cầu, đối thủ — nên làm hay bỏ
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/discover`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/16-ambiguity-detection-rules.md`
+- `../prd/references/rules/16-ambiguity-detection-rules.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/03-discover.md`
+- `../prd/references/_templates/03-discover.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{product_name}/03-discovery-report.md`

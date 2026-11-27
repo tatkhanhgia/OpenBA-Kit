@@ -12,14 +12,16 @@ metadata:
 
 Prototype bấm được như app thật, lưu trạng thái
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/prototype-html`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/13-wireframe-html-guidelines.md`
+- `../prd/references/rules/13-wireframe-html-guidelines.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/32-prototype-html.html`
+- `../prd/references/_templates/32-prototype-html.html`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/prototype/{app_name}.html`

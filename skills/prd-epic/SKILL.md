@@ -12,14 +12,17 @@ metadata:
 
 Đặc tả 1 tính năng: capability P0/P1/P2, kế hoạch release
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/prd-epic`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/01-fr-naming-convention.md`\n- `rules/07-invest-user-story.md`
+- `../prd/references/rules/01-fr-naming-convention.md`
+- `../prd/references/rules/07-invest-user-story.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/07-prd-epic.md`
+- `../prd/references/_templates/07-prd-epic.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/{feature}/epic-spec.md`

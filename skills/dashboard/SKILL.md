@@ -12,14 +12,16 @@ metadata:
 
 Dashboard tổng quan: tiến độ, độ phủ, rủi ro toàn dự án
 
+Các đường dẫn `./` và `../` tính từ thư mục chứa tệp SKILL.md này. Đường dẫn `docs/` tính từ dự án đang làm việc.
+
 ## Mục tiêu
 Cung cấp hướng dẫn chuyên gia BA để thực thi lệnh `/dashboard`, sinh ra tài liệu chất lượng cao, có thể đưa vào sản xuất ngay lập tức mà không cần chỉnh sửa lại format.
 
 ## Quy chuẩn bắt buộc tuân thủ (Rules)
-- `rules/14-test-case-traceability.md`
+- `../prd/references/rules/14-test-case-traceability.md`
 
 ## Biểu mẫu tham chiếu (Template)
-- `_templates/45-project-health-dashboard.md`
+- `../prd/references/_templates/45-project-health-dashboard.md`
 
 ## Vị trí lưu tệp mặc định
 - `docs/project-dashboard.md`
